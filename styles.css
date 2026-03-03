@@ -12,7 +12,7 @@
     --background-color: oklch(21% 0.006 285.885);
     --heading-color: oklch(92% 0.004 286.32);
     --a-color: oklch(70.7% 0.165 254.624);
-    --a-visited-color: oklch(62.3% 0.214 259.815);
+    --a-visited-color: oklch(80.9% 0.105 251.813);
   }
 }
 
@@ -59,11 +59,7 @@ section {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   letter-spacing: -0.03em;
   font-family: "Instrument", serif;
   line-height: 1.1;
@@ -85,17 +81,24 @@ p {
 
 a {
   color: var(--a-color);
+  text-decoration: none;
+}
+
+a h3,
+a:not(:has(h3)) {
+  font-size: 1rem;
+  text-decoration: underline;
   display: inline-block;
   text-decoration-thickness: 0.05em;
   text-underline-offset: 0.1em;
 }
 
-a:hover {
-  color: var(--a-hover-color);
-}
-
 a:visited {
   color: var(--a-visited-color);
+}
+
+a:hover {
+  color: var(--a-hover-color);
 }
 
 ul {
