@@ -85,12 +85,21 @@ a {
 }
 
 a h3,
-a:not(:has(h3)) {
+a:not(:has(h3)),
+.disabled h3 {
   font-size: 1rem;
   text-decoration: underline;
   display: inline-block;
   text-decoration-thickness: 0.05em;
   text-underline-offset: 0.1em;
+}
+
+.disabled h3 {
+  color: var(--p-color);
+}
+
+.disabled {
+    cursor: help;
 }
 
 a:visited {
