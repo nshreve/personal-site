@@ -24,7 +24,7 @@
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-wrap: pretty;
+  text-wrap: balance;
 }
 
 @font-face {
@@ -99,7 +99,7 @@ a:not(:has(h3)),
 }
 
 .disabled {
-    cursor: help;
+  cursor: help;
 }
 
 a:visited {
