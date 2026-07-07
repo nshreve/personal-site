@@ -33,12 +33,7 @@
   font-weight: 400;
   font-display: block;
 }
-@font-face {
-  font-family: "Instrument";
-  src: url("/assets/InstrumentSerif-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-display: block;
-}
+
 
 body {
   background-color: var(--background-color);
@@ -61,7 +56,6 @@ section {
 h1,
 h2 {
   letter-spacing: -0.03em;
-  font-family: "Instrument", serif;
   line-height: 1.1;
 }
 
@@ -91,7 +85,7 @@ a:not(:has(h3)),
   text-decoration: underline;
   display: inline-block;
   text-decoration-thickness: 0.05em;
-  text-underline-offset: 0.1em;
+  text-underline-offset: 0.15em;
 }
 
 .disabled h3 {
